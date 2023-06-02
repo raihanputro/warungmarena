@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `warungm3_db`
 --
-CREATE DATABASE IF NOT EXISTS `warungm3_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `warungm3_db`;
+CREATE DATABASE IF NOT EXISTS `warungmarena_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `warungmarena_db`;
 
 -- --------------------------------------------------------
 
