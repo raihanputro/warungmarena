@@ -1,0 +1,15 @@
+{
+    "boxicons": {
+        "normal": "boxicons_normal_497205797c045f0e65ca4d7538b598a0"
+    },
+    "lato": {
+        "normal": "C:\\xampp\\htdocs\\warungmarena\\application\\libraries\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/lato_normal_51116b245f08d5e5cdb537d25637e400",
+        "bold": "lato_bold_39c477866ca5e9b58b0b56a69b4bac5a"
+    },
+    "poppins": {
+        "normal": "C:\\xampp\\htdocs\\warungmarena\\application\\libraries\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_normal_442dffd12abdf0df26c14405d3f49bfa",
+        "500": "C:\\xampp\\htdocs\\warungmarena\\application\\libraries\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_500_6a6f5e017da7e062546fd806ab3b249c",
+        "600": "C:\\xampp\\htdocs\\warungmarena\\application\\libraries\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_600_272b14b77a21dc5827f4570eff556c8f",
+        "bold": "poppins_bold_2d1c4b360c3ac297e98fc2cfd808a2cc"
+    }
+}
