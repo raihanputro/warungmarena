@@ -169,7 +169,7 @@
                                         </li>
                                 <?php } else { ?>
                                         <li class="ml-2">
-                                            <?php echo anchor('auth/login', '<i class="fas fa-sign-in-alt" style="font-size:22px;"></i>')  ?>
+                                            <?php echo anchor('auth/masuk', '<i class="fas fa-sign-in-alt" style="font-size:22px;"></i>')  ?>
                                         </li>
                                 <?php } ?>
                             </ul>

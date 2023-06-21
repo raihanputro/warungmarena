@@ -43,7 +43,7 @@
             <!--style="width: 16rem;"-->
             <a href="<?= base_url('dashboard/detail/'.$brg->id_brg) ?>" style="text-decoration:none;" class="text-dark">
                 <div class="card">
-                    <img src="<?php echo base_url().'/uploads/'.$brg->gambar ?>" class="card-img-top" alt="...">
+                    <img src="<?php echo base_url().'/uploads/gambar_barang/'.$brg->gambar ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title mb-1"><?php echo $brg->nama_brg ?></h5>
                         <span class="badge rounded-pill bg-success mb-3">Rp. <?php echo number_format($brg->harga, 0,',','.') ?></span> <br>
