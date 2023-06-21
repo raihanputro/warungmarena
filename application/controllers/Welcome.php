@@ -28,7 +28,6 @@ class Welcome extends CI_Controller {
             $query = "SELECT A.*,B.nama as kategori FROM tb_barang A LEFT JOIN tb_kategori B ON A.kategori_id=B.id WHERE A.nama_brg like '%$search%'";
         }
         
-        // $data['barang'] = $this->Model_barang->tampil_data()->result();
         $data['barang'] = $this->db->query($query)->result();
         $this->db->query('SELECT A.*,B.nama as kategori FROM tb_barang A LEFT JOIN tb_kategori B ON A.kategori_id=B.id');
         $data['user'] = $this->db->get_where('tb_user',['username'=>$this->session->userdata('username')])->row();
