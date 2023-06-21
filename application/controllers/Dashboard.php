@@ -4,7 +4,7 @@ class Dashboard extends CI_Controller {
     public function __construct(){
         parent::__construct();
 
-        if($this->session->userdata('role_id') != '2'){
+        if($this->session->userdata('role') != 'Pelanggan'){
             $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
             Anda belum Login!
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -13,7 +13,7 @@ class Dashboard extends CI_Controller {
           </div>');
           redirect('auth/login');
         }
-        
+            
         $this->user = $this->db->get_where('tb_user',['username'=>$this->session->userdata('username')])->row();
     }
 
@@ -232,12 +232,6 @@ class Dashboard extends CI_Controller {
     
     public function kategori($id) {
         $search = @$_GET['cari'];
-        
-        // $query = "SELECT A.*,B.nama as kategori FROM tb_barang A LEFT JOIN tb_kategori B ON A.kategori_id=B.id";
-        
-        // if ($search != "") {
-        //     $query = "SELECT A.*,B.nama as kategori FROM tb_barang A LEFT JOIN tb_kategori B ON A.kategori_id=B.id WHERE A.nama_brg like '%$search%'";
-        // }
         
         $data['kategori'] = $this->db->get('tb_kategori')->result();
         
